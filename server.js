@@ -65,7 +65,6 @@ function onConnect(socketClient) {
 
 }
 console.log(`server start on port ${usedPort}`);
-console.log(`${req.protocol}://${req.get("host")}${req.originalUrl}`);
 
 function getFreeAvatarsRequest(socketClient) {
   let avatarsArr = clientsArr.map(client => client.avatar);
