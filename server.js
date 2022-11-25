@@ -1,5 +1,4 @@
 const WebSocket = require('ws');
-const lastUpdateDate = '3-01-2022';
 
 const usedPort = process.env.PORT || 9000;
 const socketServer = new WebSocket.Server({ port: usedPort });
@@ -66,7 +65,6 @@ function onConnect(socketClient) {
 
 }
 console.log(`server start on port ${usedPort}`);
-console.log(`last update date is ${lastUpdateDate}`);
 
 function getFreeAvatarsRequest(socketClient) {
   let avatarsArr = clientsArr.map(client => client.avatar);
